@@ -17,6 +17,6 @@ clean:
 local-universe: clean
 	python3.5 $(REPO_BASE_DIR)/scripts/local-universe.py			\
 		--repository $(REPO_BASE_DIR)/repo/packages/	\
-		--include="cassandra,spark,kafka" &&							\
+		--include="" &&							\
 	docker save -o local-universe.tar mesosphere/universe:latest &&		\
 	gzip local-universe.tar
