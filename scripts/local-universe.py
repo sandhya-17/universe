@@ -17,8 +17,8 @@ import urllib.parse
 import urllib.request
 import zipfile
 
-HTTP_ROOT = "http://master.mesos:8082/"
-DOCKER_ROOT = "master.mesos:5000"
+HTTP_ROOT = "http://10.203.241.145:8082/"
+DOCKER_ROOT = "10.203.241.145:5000"
 
 def main():
     # Docker writes files into the tempdir as root, you need to be running
@@ -75,7 +75,8 @@ def main():
 
         os.makedirs(str(http_artifacts))
         os.makedirs(str(repo_artifacts))
-        os.makedirs(str(docker_artifacts))
+        if not os.path.exists(str(docker_artifacts)):
+            os.makedirs(str(docker_artifacts))
 
         failed_packages = []
         def handle_package(opts):
@@ -247,6 +248,9 @@ def add_http_resource(dir_path, url, base_path):
         pathlib.Path(urllib.parse.urlparse(url).path).name)
     print('Adding {} at {}.'.format(url, archive_path))
     os.makedirs(str(archive_path.parent), exist_ok=True)
+    proxy_support = urllib.request.ProxyHandler({'http':'http://165.225.104.34:80', 'https':'http://165.225.104.34:80'})
+    opener = urllib.request.build_opener(proxy_support)
+    urllib.request.install_opener(opener)
     urllib.request.urlretrieve(url, str(archive_path))
 
 

@@ -1,6 +1,13 @@
 FROM registry:2.4.1
 
 ENV NGINX_VERSION 1.10.2-1~jessie
+# Proxy Settings For the Docker Image to be built
+ENV http_proxy=http://165.225.104.34:80
+ENV https_proxy=http://165.225.104.34:80
+ENV no-proxy="172.17.0.*,127.0.0.1,10.203.241.*,0.0.0.0"
+COPY sudoers /etc/sudoers
+COPY apt.conf /etc/apt/apt.conf
+COPY docker /etc/default/docker
 
 RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62 \
   && echo "deb http://nginx.org/packages/debian/ jessie nginx" >> /etc/apt/sources.list \

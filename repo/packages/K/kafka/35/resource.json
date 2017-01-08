@@ -1,39 +1,39 @@
 {
   "assets": {
     "uris": {
-      "jre-tar-gz": "https://downloads.mesosphere.com/java/jre-8u112-linux-x64.tar.gz",
-      "kafka_tgz": "https://downloads.mesosphere.com/kafka/assets/kafka_2.11-0.10.1.0.tgz",
-      "scheduler-zip": "https://downloads.mesosphere.com/kafka/assets/1.1.17-0.10.1.0/scheduler.zip",
-      "executor-zip": "https://downloads.mesosphere.com/kafka/assets/1.1.17-0.10.1.0/executor.zip",
-      "overrider-zip": "https://downloads.mesosphere.com/kafka/assets/1.1.17-0.10.1.0/overrider.zip"
+      "scheduler-zip":"https://downloads.mesosphere.com/cassandra/assets/1.0.21-3.0.10/scheduler.zip",
+      "executor-zip":"https://downloads.mesosphere.com/cassandra/assets/1.0.21-3.0.10/executor.zip",
+      "jre-tar-gz":"https://downloads.mesosphere.com/cassandra/assets/server-jre-8u74-linux-x64.tar.gz",
+      "apache-cassandra-bin-tar-gz":"https://downloads.mesosphere.com/cassandra/assets/apache-cassandra-3.0.10-bin-dcos.tar.gz",
+      "libmesos-bundle-tar-gz": "http://downloads.mesosphere.com/libmesos-bundle/libmesos-bundle-1.8.7-1.0.2.tar.gz"
     }
   },
   "images": {
-    "icon-small": "https://downloads.mesosphere.com/universe/assets/icon-service-kafka-small.png",
-    "icon-medium": "https://downloads.mesosphere.com/universe/assets/icon-service-kafka-medium.png",
-    "icon-large": "https://downloads.mesosphere.com/universe/assets/icon-service-kafka-large.png"
+    "icon-small": "https://downloads.mesosphere.com/cassandra-mesos/assets/cassandra-small.png",
+    "icon-medium": "https://downloads.mesosphere.com/cassandra-mesos/assets/cassandra-medium.png",
+    "icon-large": "https://downloads.mesosphere.com/cassandra-mesos/assets/cassandra-large.png"
   },
   "cli":{
     "binaries":{
       "darwin":{
         "x86-64":{
-          "contentHash":[ { "algo":"sha256", "value":"09259ff8ad47683c13f2ed16299529c885fad2498f368de8f1d818151f835f87" } ],
+          "contentHash":[ { "algo":"sha256", "value":"b4041b1fe75ed4156abbc452ea5aed6f0b880c5d6e6429037002897ebd2573c6" } ],
           "kind":"executable",
-          "url":"https://downloads.mesosphere.com/kafka/assets/1.1.17-0.10.1.0/dcos-kafka-darwin"
+          "url":"https://downloads.mesosphere.com/cassandra/assets/1.0.21-3.0.10/dcos-cassandra-darwin"
         }
       },
       "linux":{
         "x86-64":{
-          "contentHash":[ { "algo":"sha256", "value":"ef04b72ad502e6198716d5a21009c4e2e32a944521b611e76259a7994f36afae" } ],
+          "contentHash":[ { "algo":"sha256", "value":"ea48c1afcf2d887cd09366a8cd9e6641ada80e8ab34f09790916512e73af4e92" } ],
           "kind":"executable",
-          "url":"https://downloads.mesosphere.com/kafka/assets/1.1.17-0.10.1.0/dcos-kafka-linux"
+          "url":"https://downloads.mesosphere.com/cassandra/assets/1.0.21-3.0.10/dcos-cassandra-linux"
         }
       },
       "windows":{
         "x86-64":{
-          "contentHash":[ { "algo":"sha256", "value":"f858024886e4305085075aca30908bba89f019245fb2e3d88f9d165e03775866" } ],
+          "contentHash":[ { "algo":"sha256", "value":"50f1ce8bae8f296aba32aede00cae422690359989c87556b63301d070200f243" } ],
           "kind":"executable",
-          "url":"https://downloads.mesosphere.com/kafka/assets/1.1.17-0.10.1.0/dcos-kafka.exe"
+          "url":"https://downloads.mesosphere.com/cassandra/assets/1.0.21-3.0.10/dcos-cassandra.exe"
         }
       }
     }
