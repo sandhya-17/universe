@@ -1,6 +1,6 @@
 {
   "id": "/{{service.name}}",
- "cmd": "env && export LD_LIBRARY_PATH=$MESOS_SANDBOX/libmesos-bundle/lib && export MESOS_NATIVE_JAVA_LIBRARY=$(ls $MESOS_SANDBOX/libmesos-bundle/lib/libmesos-*.so) && env && ./scheduler/bin/cassandra-scheduler server ./scheduler/conf/scheduler.yml",
+  "cmd": "env && export LD_LIBRARY_PATH=$MESOS_SANDBOX/libmesos-bundle/lib && export MESOS_NATIVE_JAVA_LIBRARY=$(ls $MESOS_SANDBOX/libmesos-bundle/lib/libmesos-*.so) && env && ./scheduler/bin/cassandra-scheduler server ./scheduler/conf/scheduler.yml",
   "instances": 1,
   "cpus": {{service.cpus}},
   "mem": {{service.mem}},
@@ -13,7 +13,12 @@
       "labels": {}
     }
   ],
-  "healthChecks": [
+"uris": [
+  "{{resource.assets.uris.scheduler-zip}}",
+  "{{resource.assets.uris.jre-tar-gz}}",
+  "{{resource.assets.uris.libmesos-bundle-tar-gz}}"
+],
+"healthChecks": [
   {
     "gracePeriodSeconds": 120,
     "intervalSeconds": 30,
