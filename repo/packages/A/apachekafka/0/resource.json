@@ -1,0 +1,42 @@
+{
+  "assets": {
+    "uris": {
+      "jre-tar-gz": "http://10.203.241.151:7878/kafka_frameworks/jre-8u112-linux-x64.tar.gz",
+      "kafka_tgz": "http://10.203.241.151:7878/kafka_frameworks/kafka_2.11-0.10.1.1.tgz",
+      "scheduler-zip": "http://10.203.241.151:7878/kafka_frameworks/scheduler.zip",
+      "executor-zip": "http://10.203.241.151:7878/kafka_frameworks/executor.zip",
+      "overrider-zip": "http://10.203.241.151:7878/kafka_frameworks/overrider.zip"
+    }
+  },
+  "images": {
+    "icon-small": "http://10.203.241.151:7878/kafka_frameworks/icon-service-kafka-small.png",
+    "icon-medium": "http://10.203.241.151:7878/kafka_frameworks/icon-service-kafka-medium.png",
+    "icon-large": "http://10.203.241.151:7878/kafka_frameworks/icon-service-kafka-large.png"
+  },
+  "cli":{
+    "binaries":{
+      "darwin":{
+        "x86-64":{
+          "contentHash":[ { "algo":"sha256", "value":"09259ff8ad47683c13f2ed16299529c885fad2498f368de8f1d818151f835f87" } ],
+          "kind":"executable",
+          "url":"http://10.203.241.151:7878/kafka_frameworks/dcos-kafka-darwin"
+        }
+      },
+      "linux":{
+        "x86-64":{
+          "contentHash":[ { "algo":"sha256", "value":"ef04b72ad502e6198716d5a21009c4e2e32a944521b611e76259a7994f36afae" } ],
+          "kind":"executable",
+          "url":"http://10.203.241.151:7878/kafka_frameworks/dcos-kafka-linux"
+        }
+      },
+      "windows":{
+        "x86-64":{
+          "contentHash":[ { "algo":"sha256", "value":"f858024886e4305085075aca30908bba89f019245fb2e3d88f9d165e03775866" } ],
+          "kind":"executable",
+          "url":"http://10.203.241.151:7878/kafka_frameworks/dcos-kafka.exe"
+        }
+      }
+    }
+  }
+}
+

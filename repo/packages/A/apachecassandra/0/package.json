@@ -1,0 +1,18 @@
+{
+  "description": "Apache-Cassandra running on DC/OS",
+  "framework": true,
+  "maintainer": "BellLabs",
+  "minDcosReleaseVersion": "1.8",
+  "name": "apachecassandra",
+  "packagingVersion": "3.0",
+  "postInstallNotes": "DC/OS Apache Cassandra has been successfully installed!This is for manual installation",
+  "postUninstallNotes": "DC/OS Apache Cassandra service has been uninstalled.",
+  "preInstallNotes": "DC/OS Cassandra Service default configuration with minmum configurations 1 node with 1.5 CPU, 537MB of memory and 900MB of disk for running Cassandra Nodes. And, 1 node with 0.5 CPU shares, 512MB of memory for running the service scheduler.",
+  "selected": true,
+  "tags": [
+    "data",
+    "database",
+    "nosql"
+  ],
+  "version": "3.9"
+}
