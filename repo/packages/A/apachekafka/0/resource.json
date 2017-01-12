@@ -24,7 +24,7 @@
       },
       "linux":{
         "x86-64":{
-          "contentHash":[ { "algo":"sha256", "value":"a1fe9ddb5c3a3910a25fbabb0b93b9a0f49a9b92b49a92616d29d413390e3677" } ],
+          "contentHash":[ { "algo":"sha256", "value":"ef04b72ad502e6198716d5a21009c4e2e32a944521b611e76259a7994f36afae" } ],
           "kind":"executable",
           "url":"http://10.203.241.151:7878/kafka_frameworks/dcos-kafka-linux"
         }
