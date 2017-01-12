@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.5
+#!/opt/mesosphere/bin/python3.5
 """This script builds a Markdown file containing configuration references for
 all packages (and all package versions) contained in the Mesosphere DC/OS
 Universe repository. It outputs a single file, 'config-reference.md' in the
