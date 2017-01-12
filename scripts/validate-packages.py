@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.5
+#!/opt/mesosphere/bin/python3.5
 
 import json
 import jsonschema
