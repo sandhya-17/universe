@@ -24,7 +24,7 @@
       },
       "linux":{
         "x86-64":{
-          "contentHash":[ { "algo":"sha256", "value":"ea48c1afcf2d887cd09366a8cd9e6641ada80e8ab34f09790916512e73af4e92" } ],
+          "contentHash":[ { "algo":"sha256", "value":"a1fe9ddb5c3a3910a25fbabb0b93b9a0f49a9b92b49a92616d29d413390e3677" } ],
           "kind":"executable",
           "url":"http://10.203.241.151:7878/cassandra_frameworks/dcos-cassandra-linux"
         }
