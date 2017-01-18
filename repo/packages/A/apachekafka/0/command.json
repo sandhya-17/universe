@@ -1,0 +1,5 @@
+{
+  "pip": [
+    "https://10.203.241.151:7878/kafka_frameworks/bin_wrapper-0.0.1-py2.py3-none-any.whl"
+  ]
+}
