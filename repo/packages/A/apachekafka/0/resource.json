@@ -17,21 +17,21 @@
     "binaries":{
       "darwin":{
         "x86-64":{
-          "contentHash":[ { "algo":"sha256", "value":"09259ff8ad47683c13f2ed16299529c885fad2498f368de8f1d818151f835f87" } ],
+          "contentHash":[ { "algo":"sha256", "value":"ad9a07ef147e2ab9d34eb19656d951934d8bb1d45416d0984bb4d5f6c5c8d27f" } ],
           "kind":"executable",
           "url":"http://10.203.241.151:7878/kafka_frameworks/dcos-kafka-darwin"
         }
       },
       "linux":{
         "x86-64":{
-          "contentHash":[ { "algo":"sha256", "value":"ef04b72ad502e6198716d5a21009c4e2e32a944521b611e76259a7994f36afae" } ],
+          "contentHash":[ { "algo":"sha256", "value":"a1fe9ddb5c3a3910a25fbabb0b93b9a0f49a9b92b49a92616d29d413390e3677" } ],
           "kind":"executable",
           "url":"http://10.203.241.151:7878/kafka_frameworks/dcos-kafka-linux"
         }
       },
       "windows":{
         "x86-64":{
-          "contentHash":[ { "algo":"sha256", "value":"f858024886e4305085075aca30908bba89f019245fb2e3d88f9d165e03775866" } ],
+          "contentHash":[ { "algo":"sha256", "value":"4fd52e4a91f70d5ce97ea2722c6547c425ea53380fad4eb2b87fbd395385fb5d" } ],
           "kind":"executable",
           "url":"http://10.203.241.151:7878/kafka_frameworks/dcos-kafka.exe"
         }
